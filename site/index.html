@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>add-specific-holidays-to-gcal</title>
+      <script type="module" src="script.js"></script>
+      <link rel="icon" href="#"/>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Add Specific Holidays to Google Calendar</h1>
+    <h3><u>Directions</u></h3>
+    <p>Go to Google Calendar (website) settings > "Add calendar" > "Browse calendars of interest" > "Regional holidays" > Browse and select a calendar.</p>
+    <p>Select the added calendar under "Settings for other calendars" > "Integrate calendar" > Copy the entire link in "Public address in iCal format" > Open a new tab and visit the link. A file should download.</p>
+    <p>Upload and submit the file below. Then, submit the specific holidays, copy the output at the bottom of the page, and paste it in the <a href="https://script.google.com/d/1szEbLa_uDHXaJ_1DT3VGWrs6SdG4SKIm5IBOD01dirIjdTM6eop1AI2n/edit?newcopy=true">script</a> (after making a copy) as the value for <code>SPECIFIC_HOLIDAYS</code>.</p>
+    <br>
+    <h3><u>FAQ</u></h3>
+    <p><i>What does "(substitute)" mean?</i> If the holiday falls on the weekend, the succeeding weekday (usually Monday) is designated as the holiday "substitute".</p>
+    <p><i>"Election Day" vs. "Election Day (General Election)"?</i> No clue, just use "Election Day (General Election)".</p>
+    <br>
+    
+    <input type="file" id="file-input" accept=".ics">
+    <p id="error-text" style="display: inline-block; color: red;"></p>
+    <button id="submit-ical" style="display: block;">Submit</button>
+    <br>
+    <button id="submit-holidays-top" style="display: none;">Submit Holidays</button>
+    <fieldset id="holidays-field" style="display: none;">
+        <legend>Select which holidays to include in your calendar</legend>
+        <div id="holiday-divs">
+          <!-- <div>
+          <input type="checkbox" id="holidayName">
+          <label for="holidayName">holidayName</label>
+          </div> -->
+        </div>
+    </fieldset>
+    <button id="submit-holidays-bottom" style="display: none;">Submit Holidays</button>
+    <br>
+    <p id="selected-holidays-tooltip" style="display: none;"><u>COPY THE FOLLOWING:</u></p>
+    <br>
+    <p id="selected-holidays" style="font-size: larger;"></p>
+    <br>
+    <br>
+  </body>
+</html>
