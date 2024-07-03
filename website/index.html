@@ -12,13 +12,14 @@
     <h1 style="display: inline-block;">Add Specific Holidays to Google Calendar</h1> 
     <p style="font-size: large; display: inline-block;">&nbsp;<a href="https://github.com/charleskimbac/specific-holidays-gcal">GitHub</a></p>
     <h3><u>Directions</u></h3>
-    <p>Go to Google Calendar (website) settings > "Add calendar" > "Browse calendars of interest" > "Regional holidays" > Browse and select a calendar.</p>
-    <p>Select the added calendar under "Settings for other calendars" > "Integrate calendar" > Copy the entire link in "Public address in iCal format" > Open a new tab and visit the link. A file should download.</p>
-    <p>Upload and submit the file below. Then, submit the specific holidays, copy the output at the bottom of the page, and paste it in the <a href="https://script.google.com/home/projects/1szEbLa_uDHXaJ_1DT3VGWrs6SdG4SKIm5IBOD01dirIjdTM6eop1AI2n/edit">script</a> (after making a copy) as the value for <code>SPECIFIC_HOLIDAYS</code>.</p>
+    <p>1) Go to Google Calendar (website) settings > "Add calendar" > "Browse calendars of interest" > "Regional holidays" > Browse and select a calendar.</p>
+    <p>2) Select the added calendar under "Settings for other calendars" > "Integrate calendar" > Copy the entire link in "Public address in iCal format"</p>
+    <p>3) Open a new tab and visit the link. A <code>.ics</code> file should download.</p>
+    <p>4) Upload and submit the file below. Then, submit the specific holidays, copy the output at the bottom of the page, and paste it in the <a href="https://script.google.com/home/projects/1szEbLa_uDHXaJ_1DT3VGWrs6SdG4SKIm5IBOD01dirIjdTM6eop1AI2n/edit">script</a> (after making a copy) as the value for <code>SPECIFIC_HOLIDAYS</code>.</p>
     <br>
     <h3><u>FAQ</u></h3>
-    <p><i>What does "(substitute)" mean?</i> If the holiday falls on the weekend, the succeeding weekday (usually Monday) is designated as the holiday "substitute".</p>
-    <p><i>"Election Day" vs. "Election Day (General Election)"?</i> No clue, just use "Election Day (General Election)".</p>
+    <p>1) <i>What does "(substitute)" mean?</i> If the holiday falls on the weekend, the succeeding weekday (usually Monday) is designated as the holiday "substitute".</p>
+    <p>2) <i>"Election Day" vs. "Election Day (General Election)"?</i> No clue, just use "Election Day (General Election)".</p>
     <br>
     
     <input type="file" id="file-input" accept=".ics">

@@ -4,13 +4,16 @@
 *=========================================
 * 
 * 1) Make a copy of this script:
-*      Go to the project overview icon on the left (looks like this: ⓘ), then click the "copy" icon on the top right (looks like two files on top of each other).
+*      Go to the project overview icon on the left (looks like this: ⓘ), then click the "copy" icon at the top right (looks like two files on top of each other).
+*      Use this copy from now on to edit and change settings.
 * 2) Settings: 
-*      See lines 31, 35, and 39, and change the values after the equal sign as necessary. Please read their respective directions carefully.
+*      See the 3 options in the Settings section below (lines 34, 38, and 42) and change the values *after* the equal sign as necessary. Please read their respective directions carefully.
 * 3) Install:
 *      Make sure your toolbar says "install" to the right of "Debug", then click "Run".
 * 4) Authorize: 
-*      You will be prompted to authorize the program and will need to click "Advanced" > "Go to GAS-ICS-Sync (unsafe)".
+*      You will be prompted to authorize the program and will need to click "Advanced" > "Go to specific-holidays-gcal (unsafe)".
+*      These permissions are needed to 1) create and import a calendar into your Google Calendar, 2) periodically update the calendar to include upcoming holidays,
+*      and 3) get calendar information from the ICAL_LINK provided.
 *
 * * It may take a few minutes for the events to populate into your Calendar.
 *
@@ -30,7 +33,7 @@
 // The format should be: "https://calendar.google.com/calendar/ical/......ics". It should end in ".ics".
 const ICAL_LINK = "https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics";
 
-// Use https://projects.char.kim/specific-holidays-gcal to easily select specific holidays you want.
+// Using the link above, use https://projects.char.kim/specific-holidays-gcal to easily select specific holidays you want and skip to step 3.
 // The format should be: ["name1"] OR ["name1", "name2", "name3"] ...etc
 const SPECIFIC_HOLIDAYS = ["New Year's Day"];
 
