@@ -1,3 +1,7 @@
+# DEPRECATED - feature now officially supported
+As of Feb 2025, Google Calendar **finally** allows users to choose which entries for public holidays and national observances they want shown.  
+Add Calendar > Browse calendars of interest > Regional holidays
+
 # specific-holidays-gcal
 specific-holidays-gcal is for those who want to use Google Calendar's regional holiday calendars but only want to show specific holidays instead of all of the included holidays.
 
